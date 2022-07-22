@@ -20,7 +20,7 @@ while (wartownik_petli)
 
     if (typUzytkownikaInt == liczba_wlosowana)
     {
-        Console.WriteLine($"Zgadłeś !! Liczba prób wynosi {licznik_prob}");
+        Console.WriteLine($"Zgadłeś !! Liczba nie udanych prób wynosi {licznik_prob}");
         wartownik_petli = false;
     }
 
