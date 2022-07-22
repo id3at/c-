@@ -19,7 +19,10 @@ while (wartownik_petli)
 
 
     if (typUzytkownikaInt == liczba_wlosowana)
+    
     {
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Blue;
         Console.WriteLine($"Zgadłeś !! Liczba nie udanych prób wynosi {licznik_prob}");
         wartownik_petli = false;
     }
@@ -27,14 +30,20 @@ while (wartownik_petli)
 
     else if (typUzytkownikaInt > liczba_wlosowana)
     {
-        Console.WriteLine("Liczba jest za duża");
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Liczba jest za duża".ToUpper());
     }
     else
     {
-        Console.WriteLine("Liczba jest za mała");
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Liczba jest za mała".ToUpper());
     }
     if (wartownik_petli)
     {
+        
+        Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("Podaj liczbę:");
         typUzytkownikaStr = Console.ReadLine();
 
