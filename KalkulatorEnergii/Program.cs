@@ -137,7 +137,10 @@ class KalkulatorEnergii
     public string inforamcje()
     {
 
-        return $"Przez {CzasUzytkownika()} dni zuzyto {Zużycie()} {jednostka}.\nKoszt wynosi {Koszt()} zł przy cenie {cena_uslugi} gr.\nŚrednia zuzycia przez jeden dzień wynosi {ŚredniaJedenDzien()}{jednostka} \nKoszt jednego dnia jest równy: {KosztJendegoDnia()}zł przy średniej {ŚredniaJedenDzien()}{jednostka}\n";
+        return @$"Przez {CzasUzytkownika()} dni zuzyto {Zużycie()} {jednostka}.\n
+Koszt wynosi {Koszt()} zł przy cenie {cena_uslugi} gr.\n
+Średnia zuzycia przez jeden dzień wynosi {ŚredniaJedenDzien()}{jednostka} \n
+Koszt jednego dnia jest równy: {KosztJendegoDnia()}zł przy średniej {ŚredniaJedenDzien()}{jednostka}\n";
 
     }
 
