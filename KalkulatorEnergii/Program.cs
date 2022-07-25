@@ -27,23 +27,14 @@ class KalkulatorEnergii
     public DateTime dataDo;
     
 
-    public DateTime CzasOd()
-    {
-        dataOd = new DateTime(data_od[0], data_od[1], data_od[2]);
-        
-        return dataOd;
-    }
-    public DateTime CzasDo()
-    {
-        dataDo = new DateTime(data_do[0], data_do[1], data_do[2]);
-        
-        return dataDo;
-    }
 
 
     public int CzasUzytkownika()
+    
     {
-        var roznica = CzasDo() - CzasOd();
+        dataOd = new DateTime(data_od[0], data_od[1], data_od[2]);
+        dataDo = new DateTime(data_do[0], data_do[1], data_do[2]);
+        var roznica = dataDo - dataOd;
         return roznica.Days;
 
     }
