@@ -7,7 +7,6 @@ CZas trwania , i koszt.
 
 KalkulatorEnergii kalk = new KalkulatorEnergii();
 Console.WriteLine(kalk.inforamcje());
-Console.WriteLine(kalk.data_od[0]);
 Console.ReadKey();
 
 
