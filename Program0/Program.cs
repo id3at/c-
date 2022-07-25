@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+Console.WriteLine(Environment.OSVersion.VersionString);
+
 Random rnd = new Random();
 int liczba_wlosowana = rnd.Next(1, 11);
 

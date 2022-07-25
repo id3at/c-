@@ -1,0 +1,19 @@
+#!csharp
+
+string napis = "Hello Netebook";
+Console.WriteLine(napis.ToUpperInvariant());
+
+for(int i = 0; i < napis.Count(); i++)
+{
+
+    Console.WriteLine(napis[i]);
+
+}
+
+#!markdown
+
+Pierwszy test netboka.
+
+#!csharp
+
+Console.WriteLine(napis.ToLower());

@@ -7,6 +7,7 @@ CZas trwania , i koszt.
 
 KalkulatorEnergii kalk = new KalkulatorEnergii();
 Console.WriteLine(kalk.inforamcje());
+Console.WriteLine(kalk.data_od[0]);
 Console.ReadKey();
 
 
@@ -20,16 +21,30 @@ class KalkulatorEnergii
     public string jednostka = "kwh";
 
 
-    public static int[] data_od = { 2022, 6, 1 };
-    public static int[] data_do = { 2022, 7, 24 };
-    public DateTime dataOd = new DateTime(data_od[0], data_od[1], data_od[2]);
-    public DateTime dataDo = new DateTime(data_do[0], data_do[1], data_do[2]);
+    public  int[] data_od = { 2022, 6, 1 };
+    public  int[] data_do = { 2022, 7, 24 };
 
+    public DateTime dataOd;
+    public DateTime dataDo;
+    
+
+    public DateTime CzasOd()
+    {
+        dataOd = new DateTime(data_od[0], data_od[1], data_od[2]);
+        
+        return dataOd;
+    }
+    public DateTime CzasDo()
+    {
+        dataDo = new DateTime(data_do[0], data_do[1], data_do[2]);
+        
+        return dataDo;
+    }
 
 
     public int CzasUzytkownika()
     {
-        var roznica = dataDo - dataOd;
+        var roznica = CzasDo() - CzasOd();
         return roznica.Days;
 
     }
